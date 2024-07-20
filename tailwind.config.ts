@@ -28,10 +28,23 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "spin-slow": {
+          "0%, 100%": { transform: "rotate(0)" },
+          "50%": { transform: "rotate(270deg)" },
+        },
+        "spin-slow-reverse": {
+          "0%, 100%": { transform: "rotate(0)" },
+          "50%": { transform: "rotate(-270deg)" },
+        },
+      },
+      boxShadow: {
+        "outline-blue": "0px 3px 12px 1px #14b8a6",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin-slow 2s linear infinite",
+        "spin-slow-reverse": "spin-slow-reverse 4s linear infinite",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

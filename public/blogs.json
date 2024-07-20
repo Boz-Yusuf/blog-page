@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Watchtower - Docker NAS Setup",
+    "date": "February 19, 2021",
+    "content": "This is the content of blog 1"
+  },
+  {
+    "id": 2,
+    "title": "Watchtower - Docker NAS Setup",
+    "date": "February 5, 2021",
+    "content": "This is the content of blog 2"
+  }
+]
