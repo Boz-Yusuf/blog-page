@@ -51,7 +51,7 @@ const dummyProjects = [
   },
 ];
 
-function Projects({}: Props) {
+function Projects() {
   return (
     <div>
       <div className="border-b w-full border-gray-500/50 space-y-4 pb-4">

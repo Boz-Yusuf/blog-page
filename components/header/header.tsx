@@ -8,7 +8,6 @@ const navbar = [
   { title: "Blog", url: "/", isActive: true },
   { title: "Projects", url: "/projects", isActive: true },
   { title: "About", url: "/about", isActive: true },
-  { title: "Uses", url: "/uses", isActive: true },
 ];
 
 function Header({}: Props) {
