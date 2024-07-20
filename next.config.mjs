@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   env: {
     BASE_URL: process.env.BASE_URL,
-    CURRENT_PROFILE: "yusuf",
+    CURRENT_PROFILE: "ismail",
   },
 };
 

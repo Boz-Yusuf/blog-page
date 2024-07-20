@@ -52,10 +52,10 @@ function Header({}: Props) {
         <nav className="flex gap-4">
           {navbar
             .filter((item) => item.isActive !== false)
-            .map((item) => {
+            .map((item, i) => {
               return (
                 <Link
-                  key={item.title}
+                  key={item.title + i}
                   href={item.url}
                   className="text-gray-100 hover:text-primary-600 duration-150 ease-linear text-xl tracking-wide"
                 >

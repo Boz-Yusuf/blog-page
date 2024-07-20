@@ -42,9 +42,9 @@ function Projects() {
                 />
                 <h3 className="text-2xl mt-2 line-clamp-2">{project.title}</h3>
                 <div className="flex gap-2 mt-2">
-                  {project.techstack.map((tech) => (
+                  {project.techstack.map((tech, i) => (
                     <p
-                      key={tech}
+                      key={tech + i}
                       className="px-2 h-max py-1 bg-sky-500 rounded-md tracking-wide select-none"
                     >
                       {tech}

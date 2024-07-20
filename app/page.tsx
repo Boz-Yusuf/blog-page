@@ -54,7 +54,7 @@ export default function Home() {
       >
         {tags.map((tag, i) => (
           <p
-            key={i}
+            key={i + tag}
             className="px-2 h-max py-1 hover:text-white  hover:bg-teal-500 cursor-pointer border-teal-500 border rounded-full text-sm tracking-wide select-none"
           >
             {tag}

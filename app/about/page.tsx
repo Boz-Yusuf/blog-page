@@ -51,8 +51,8 @@ function AboutPage() {
             <p>Facebook</p>
           </div>
           <div className="flex w-full justify-center gap-4  items-center">
-            {profile.contact.map((contact) => (
-              <Link href={contact.url} className="">
+            {profile.contact.map((contact, i) => (
+              <Link href={contact.url} className="" key={contact.url + i}>
                 <contact.icon />
               </Link>
             ))}
@@ -63,16 +63,16 @@ function AboutPage() {
             <h2 className="text-3xl">Experience</h2>
           </div>
           <div className="p-4 space-y-4 ">
-            {profile.experiences.map((experience) => (
-              <div className="space-y-4">
+            {profile.experiences.map((experience, i) => (
+              <div className="space-y-4" key={experience.company + i}>
                 <h3 className="text-2xl font-bold">{experience.company}</h3>
                 {experience.jobs.map((job) => (
-                  <div className="space-y-4">
+                  <div className="space-y-4" key={job.jobtitle + i}>
                     <h4 className="text-xl">{job.jobtitle}</h4>
                     <p className="text-gray-300">{job.date}</p>
                     <ul className="list-disc list-inside space-y-1 text-gray-300 tracking-wide">
-                      {job.tasks.map((task) => (
-                        <li>{task}</li>
+                      {job.tasks.map((task, i) => (
+                        <li key={task + i}>{task}</li>
                       ))}
                     </ul>
                   </div>
