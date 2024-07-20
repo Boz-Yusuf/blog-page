@@ -2,56 +2,23 @@ import { GithubIcon, OutsideIcon } from "@/components/icons";
 import { LucideGithub, LucideOutdent } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-
-const dummyProjects = [
-  {
-    id: "1",
-    title: "Formats, Runs and highlights FitNesse tests in VS Code",
-    techstack: ["TypeScript", "Node.js", "VS Code"],
-    imgUrl:
-      "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fvscodefitnesse.png&w=1920&q=75",
-    github: "https://github.com/chrisotto6/VSCodeFitNesse",
-    live: "https://github.com/chrisotto6/VSCodeFitNesse",
-  },
-  {
-    id: "2",
-    title: "A simple and clean blog template",
-    techstack: ["CQRS", "PostgreSQL", ".NET Core"],
-    github: "",
-    imgUrl:
-      "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fchrisottodev.png&w=1920&q=75",
-    live: "",
-  },
-  {
-    id: "3",
-    title: "A simple and clean blog template",
-    techstack: ["CQRS", "PostgreSQL", ".NET Core"],
-    github: "",
-    imgUrl:
-      "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Flibrary.png&w=1920&q=75",
-    live: "",
-  },
-  {
-    id: "4",
-    title: "A simple and clean blog template",
-    techstack: ["CQRS", "PostgreSQL", ".NET Core"],
-    github: "",
-    imgUrl:
-      "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Ffitnesseformat.png&w=1920&q=75",
-    live: "",
-  },
-  {
-    id: "5",
-    title: "A simple and clean blog template",
-    techstack: ["CQRS", "PostgreSQL", ".NET Core"],
-    github: "",
-    imgUrl:
-      "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fcardshuffling.png&w=1920&q=75",
-    live: "",
-  },
-];
+import profileDefault from "@/profiles/default.json";
+import profileIsmail from "@/profiles/ismail.json";
 
 function Projects() {
+  let projects;
+  console.log(
+    "process.env.CURRENT_PROFILE",
+    process.env.CURRENT_PROFILE == "ismail"
+  );
+  switch (process.env.CURRENT_PROFILE) {
+    case "ismail":
+      projects = profileIsmail.projects;
+      break;
+    default:
+      projects = profileDefault.projects;
+      break;
+  }
   return (
     <div>
       <div className="border-b w-full border-gray-500/50 space-y-4 pb-4">
@@ -60,9 +27,9 @@ function Projects() {
           My open source side projects.
         </h2>
       </div>
-      <div className="max-w-[800px] mx-auto mt-4">
+      <div className="max-w-[800px] mx-auto mt-6">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2">
-          {dummyProjects.map((project) => (
+          {projects.map((project) => (
             <div
               key={project.id}
               className="shadow-outline-blue p-4 rounded-lg flex flex-col justify-between gap-4"

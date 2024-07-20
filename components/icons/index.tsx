@@ -3,7 +3,7 @@ export const OutsideIcon = () => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 448 512"
       height="30"
       width="30"
@@ -19,7 +19,7 @@ export const GithubIcon = (props: any) => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 496 512"
       height="30"
       width="30"

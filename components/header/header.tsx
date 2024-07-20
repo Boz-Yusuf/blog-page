@@ -1,6 +1,9 @@
 import { LucideCircle } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import profileDefault from "@/profiles/default.json";
+import profileIsmail from "@/profiles/ismail.json";
+import profileYusuf from "@/profiles/yusuf.json";
 
 type Props = {};
 
@@ -11,6 +14,19 @@ const navbar = [
 ];
 
 function Header({}: Props) {
+  let title = "";
+  switch (process.env.CURRENT_PROFILE) {
+    case "ismail":
+      title = profileIsmail.header;
+      break;
+    case "yusuf":
+      title = profileYusuf.header;
+      break;
+    default:
+      title = profileDefault.header;
+      break;
+  }
+
   return (
     <header className="h-12 flex py-16 items-center justify-between">
       <div className="flex gap-4 items-center">
@@ -28,7 +44,7 @@ function Header({}: Props) {
             href="/"
             className="font-bold text-gray-100 hover:text-primary-600 duration-150 ease-linear"
           >
-            John Doe
+            {title}
           </Link>
         </h1>
       </div>

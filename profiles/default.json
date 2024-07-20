@@ -1,0 +1,135 @@
+{
+  "header": "John Doe",
+  "projects": [
+    {
+      "id": "1",
+      "title": "Formats, Runs and highlights FitNesse tests in VS Code",
+      "techstack": ["TypeScript", "Node.js", "VS Code"],
+      "imgUrl": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fvscodefitnesse.png&w=1920&q=75",
+      "github": "https://github.com/chrisotto6/VSCodeFitNesse",
+      "live": "https://github.com/chrisotto6/VSCodeFitNesse"
+    },
+    {
+      "id": "2",
+      "title": "A simple and clean blog template",
+      "techstack": ["CQRS", "PostgreSQL", ".NET Core"],
+      "github": "",
+      "imgUrl": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fchrisottodev.png&w=1920&q=75",
+      "live": ""
+    },
+    {
+      "id": "3",
+      "title": "A simple and clean blog template",
+      "techstack": ["CQRS", "PostgreSQL", ".NET Core"],
+      "github": "",
+      "imgUrl": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Flibrary.png&w=1920&q=75",
+      "live": ""
+    },
+    {
+      "id": "4",
+      "title": "A simple and clean blog template",
+      "techstack": ["CQRS", "PostgreSQL", ".NET Core"],
+      "github": "",
+      "imgUrl": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Ffitnesseformat.png&w=1920&q=75",
+      "live": ""
+    },
+    {
+      "id": "5",
+      "title": "A simple and clean blog template",
+      "techstack": ["CQRS", "PostgreSQL", ".NET Core"],
+      "github": "",
+      "imgUrl": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Fprojects%2Fcardshuffling.png&w=1920&q=75",
+      "live": ""
+    }
+  ],
+  "about": {
+    "img": {
+      "url": "https://chrisotto.dev/_next/image?url=%2Fstatic%2Fimages%2Favatar.jpg&w=1920&q=75",
+      "alt": "John Doe"
+    },
+    "contact": [
+      {
+        "icon": "LucideMail",
+        "url": "mailto:forotshaman@gmail.com"
+      },
+      {
+        "icon": "GithubIcon",
+        "url": "https://github.com/Boz-Yusuf"
+      },
+      {
+        "icon": "Linkedin",
+        "url": "https://www.linkedin.com/in/yusuf-boz/"
+      },
+      {
+        "icon": "LucideTwitter",
+        "url": "#"
+      }
+    ],
+    "experiences": [
+      {
+        "company": "Flow",
+        "jobs": [
+          {
+            "jobtitle": "Senior SDET",
+            "date": "Aug 2022 - Present",
+            "tasks": ["UNDER CONSTRUCTION"]
+          }
+        ]
+      },
+      {
+        "company": "Northwestern mutual",
+        "jobs": [
+          {
+            "jobtitle": "Software Engineer",
+            "date": "Aug 2021 - Aug 2022",
+            "tasks": [
+              "Manage technical backlog and planning for over forty test and test support repositories.",
+              "Lead team of nine Test Engineers across a large project coordinating testing efforts, managing project expectations and meeting project milestones.",
+              "Plan and execute end-to-end functional testing and create UI tests around new functionality.",
+              "Adopt and advocate technological advancement amongst teams across organization as the Digital Ambassador",
+              "Provide guidance and solutions to improve team efficiency and effectiveness.",
+              "Collaborate with cross-functional teams across the organization for companywide deliverables.",
+              "Mentor reports and mentees to achieve company, project, and personal goals.",
+              "Create automated testing solutions using Node.js, Jest, Postman, Cucumber and WDIO.",
+              "Advise on testing, automation, and performance strategies for delivery teams."
+            ]
+          },
+          {
+            "jobtitle": "Sr Test Engineer",
+            "date": "Jan 2019 - Aug 2021",
+            "tasks": [
+              "Created automated tests with Specflow, Cucumber, WDIO, Node.js and Postman.",
+              "Prescribed process improvements, tracked progress, and achieved completion objectives.",
+              "Developed Postman API testing solution at the scrum team level with Node.js, Docker and Gitlab CI/CD, forty microservices with one-thousand tests using solution.",
+              "Elevated Postman API testing solution to the enterprise level working with the frameworks team to get it added to NM internal tooling.",
+              "Worked on backend API and middleware GraphQL services using C# and Javascript.",
+              "Audited services test coverage, filling gaps and maintaining a proportional automation pyramid.",
+              "Collaborated with product organization to develop strong quality processes across project teams.",
+              "Mentored five Test Engineers, set goals, strategy, and direction to improve their technical and soft skills.",
+              "Provided technical leadership, training, guidance, feedback, and coaching to Test Engineers."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Blue Yonder",
+        "jobs": [
+          {
+            "jobtitle": "Senior Quality Engineer",
+            "date": "Nov 2017 - Jan 2019",
+            "tasks": [
+              "Assessed the testing requirements of each product area and its components, detailed appropriate strategies and tools throughout product development.",
+              "Utilized FitNesse and Selenium to create highly effective automated tests running on Jenkins.",
+              "Collected test metrics, analyzed trends, and suggested appropriate corrective actions.",
+              "Detected the root cause of unstable tests, corrected the underlying issues that resulted in an 80% decrease in unstable tests year over year.",
+              "Evaluated test automation tools, technology, and framework based on product requirements.",
+              "Assisted in developing performance criteria and validated performance metrics were achieved.",
+              "Resolved impediments related to quality by collaborating with cross-functional stakeholders.",
+              "Conducted cross-training and education to test, development and services personnel as required."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
